@@ -1,0 +1,245 @@
+@import '~antd/dist/antd.css';
+html,body{
+	height: 100%;
+	font-family: "microsoft yahei";
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*header*/
+header{
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,.8);
+}
+#header-nav{
+	width: 50%;
+	overflow: hidden;
+	float: right;
+}
+#header-nav li{
+	float: left;
+}
+#header-nav li a{
+	float: left;
+	padding: 0 30px;
+	line-height: 40px;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+}
+/*banner*/
+#banner{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	background: url(road.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+#banner p{
+	color: #fff;
+	margin: 20px 0 0 20px;
+}
+#banner p:nth-of-type(1){
+	margin-top: 50px;
+	animation: run1 0.5s;
+}
+#banner p:nth-of-type(2){
+	animation: run2 1s;
+}
+#banner p:nth-of-type(3){
+	animation: run3 1.5s;
+}
+#banner p:nth-of-type(4){
+	animation: run4 2s;
+}
+@-webkit-keyframes run1{
+	from{transform: translate3D(-200px,0,0);}
+	to{transform: translate3D(0,0,0);}
+}
+@-webkit-keyframes run2{
+	from{transform: translate3D(-200px,0,0);}
+	to{transform: translate3D(0,0,0);}
+}
+@-webkit-keyframes run3{
+	from{transform: translate3D(-200px,0,0);}
+	to{transform: translate3D(0,0,0);}
+}
+@-webkit-keyframes run4{
+	from{transform: translate3D(-200px,0,0);}
+	to{transform: translate3D(0,0,0);}
+}
+#person{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	left: 46%;
+	top: 90px;
+}
+#person img{
+	width: 100px;
+	height: 100px;
+}
+#person h4{
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	background: #ddd;
+	bottom: 0;
+	text-align: center;
+}
+/*content*/
+#content{
+	background: rgba(0,0,0,.8);
+}
+.con-top{
+	padding: 20px;
+	overflow: hidden;
+}
+.con-top h2{
+	font-size: 24px;
+	line-height: 30px;
+	color: #fff;
+}
+.con-top .con-top-wrap{
+	display: flex;
+	justify-content: space-around;
+}
+.con-top .custom-image{
+	height: 200px;
+	overflow: hidden;
+}
+/*main*/
+.con-main{
+	padding: 20px;
+	overflow: hidden;
+}
+.con-main h2{
+	color: #fff;
+}
+.con-main-wrap{
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.con-main .con-main-wrap .cm-left{
+	width: 65%;
+}
+.con-main .con-main-wrap .cm-left li{
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 20px 0;
+	box-shadow: 3px 3px 0 0 #ccc;
+	box-sizing: border-box;
+	background: #fff;
+}
+.con-main .con-main-wrap .cm-left li h3{
+	font-size: 16px;
+	line-height: 20px;
+	margin: 10px 0;
+}
+.con-main .con-main-wrap .cm-left figure{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.con-main .con-main-wrap .cm-left figure .fig-img{
+	width: 30%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.con-main .con-main-wrap .cm-left figure img{
+	width: 100%;
+	height: 100%;
+}
+.con-main .con-main-wrap .cm-left figure figcaption{
+	width: 65%;
+	position: relative;
+}
+.con-main .con-main-wrap .cm-left figure figcaption a{
+	position: absolute;
+	padding: 5px 10px;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 5px;
+	background: orangered;
+	color: #fff;
+}
+
+.con-main .con-main-wrap .cm-right{
+	width: 30%;
+	background: #fff;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.con-main .con-main-wrap .cm-right h2{
+	margin: 20px 0;
+	background: deepskyblue;
+	color: #fff;
+	text-indent: 20px;
+}
+.con-main .con-main-wrap .cm-right p{
+	text-indent: 20px;
+}
+.con-main .con-main-wrap .cm-right p a{
+	font-size: 14px;
+	color: #000;
+}
+.con-main .con-main-wrap .cm-right p .frends{
+	margin: 10px;
+	color: #00BFFF;
+}
+/*wenyi*/
+.wenyi-con{
+	background: rgba(0,0,0,.5);
+	overflow: hidden;
+}
+.wenyi-con h2{
+	font-size: 24px;
+	line-height: 24px;
+	margin: 20px;
+	color: #fff;
+}
+.wenyi-con ul{
+	width:60%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.wenyi-con ul li{
+	padding: 20px;
+	margin: 10px 0;
+	border: 2px dashed #CCCCCC;
+	border-radius: 10px;	
+}
+.wenyi-con ul li img{
+	width: 80%;
+	margin: 0 10%;
+	height: 300px;
+	border:1px solid #ccc;
+	box-shadow: 3px 3px 0 0 #ccc;
+}
+.wenyi-con ul li p{
+	font-size: 16px;
+	color: #00BFFF;
+	text-align: center;
+}
+.wenyi-con #audio{
+	position: fixed;
+	width: 250px;
+	right: 0;
+	bottom: 0;
+	
+}
